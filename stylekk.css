@@ -1,0 +1,17 @@
+.create{
+    border: 1px solid black;
+    margin: auto;
+    width: 500px;
+}
+
+input{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.magic{
+    padding: 15px;
+}
+h1{
+    text-align: center;
+}
