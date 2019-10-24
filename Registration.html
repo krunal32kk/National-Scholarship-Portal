@@ -1,0 +1,106 @@
+<!-- <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<link rel="stylesheet" href="css/RegisterStyle.css" type="text/css">
+</head>
+<body>
+    <script>
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+    var text;  
+    if (name==""){  
+        text="Enter your name";  
+      //  return false;
+     // text="Enter your name";
+    }
+    document.getElementById("nv").innerHTML=text;
+}    
+    </script>
+<div class="create">
+<h1>FRESH STUDENT REGISTRATION FORM</h1>
+<div class="magic">
+<form name="myform" method="post" action="#" >
+<label>EMAIL ID</label>
+<input type="email" name="emailId" required>
+<label>STATE OF DOMICILE</label>
+<select id="states" name="stateOfDomicile">
+<option name="india">Andhra Pradesh</option>
+<option name="india">Arunachal Pradesh</option>
+<option name="india">Assam</option>
+<option name="india">Bihar</option>
+<option name="india">Chhattisgarh</option>
+<option name="india">Goa</option>
+<option name="india">Gujarat</option>
+<option name="india">Haryana</option>
+<option name="india">Himachal Pradesh</option>
+<option name="india">Jammu and Kashmir</option>
+<option name="india">Jharkhand</option>
+<option name="india">Karnataka</option>
+<option name="india">Kerala</option>
+<option name="india">Madhya Pradesh</option>
+<option name="india">Maharashtra</option>
+<option name="india">Manipur</option>
+<option name="india">Meghalaya</option>
+<option name="india">Mizoram</option>
+<option name="india">Nagaland</option>
+<option name="india">Odisha</option>
+<option name="india">Punjab</option>
+<option name="india">Rajasthan</option>
+<option name="india">Sikkim	</option>
+<option name="india">Tamil Nadu</option>
+<option name="india">Telangana</option>
+<option name="india">Tripura</option>
+<option name="india">Uttar Pradesh</option>
+<option name="india">Uttarakhand</option>
+<option name="india">West Bengal</option>
+</select><br><br>
+<label>NAME(As in Marksheet)</label>
+<input type="text" name="name">
+<p id="nv"></p>
+<label>MOBILE NUMBER</label>
+<input type="text" name="num"><span id="numloc"></span><br>
+<label>INSTITUTE CODE</label>
+<input type="text" name="institutionCode"><br>
+<label>AADHAR NUMBER</label>
+<input type="text" name="adhaarNumber">
+<br>
+<label>SET YOUR PASSWORD</label>
+<input type="password" name="first_pass" >
+<br>
+<p id="pass1" name="passkk"></p>
+<label>CONFIRM PASSWORD</label>
+<br>
+<input type="password" name="second_pass">
+<br>
+<label>BANK IFSC CODE</label>
+<input type="text" name="bankIFSC"><br>
+<label>BANK ACCOUNT NUMBER</label>
+<input type="text" name="bankAccountNumber"><br>
+<label>BANK NAME</label>
+<input type="text" name="bankName">
+<br>
+<label>GENDER</label>
+<select id="gender" name="Gender">
+<option value="Male" name="gender">MALE</option>
+<option value="Female" name="gender">FEMALE</option>
+</select>
+<br><br>
+<label>DATE OF BIRTH</label>
+<input type="date" name="dateOfBirth"><br>
+<input type="checkbox" style="float:left;" required>ALL THE ABOVE INFORMATION FURNISHED BY ME IS TRUE TO THE BEST OF MY KNOWLEDGE
+<br>
+<input type="submit" value="REGISTER"  style="float:left;margin-right:15px;" onclick="validform();">
+<div class="btn1">
+<input type="button" value="RESET" style="float:left;">
+</div>
+<script src="js/validate.js"></script>
+</form>
+</div>
+</div>
+</body>
+</html>
